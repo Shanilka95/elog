@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/departure_layout"
+    tools:context=".view.SetData.SetDataActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gearSetDataTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Data"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/deep_purple_500"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_longLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient_4"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/gearSetNumberLable"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Set Number"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/gearSetNumberInput"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/deep_purple_500"
+                        android:textSize="24dp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/gearStartDateLableLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Date and Time"
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:drawableRight="@drawable/date_range"
+                        android:id="@+id/gearStartDateInput"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="textCapCharacters"
+                        android:padding="10dp"
+                        android:textColor="@color/deep_purple_500"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_4"
+                    >
+
+                    <TextView
+                        android:id="@+id/gearSetStartGpsLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start GPS"
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:addStatesFromChildren="true"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/edittext_border"
+                        android:entries="@array/directions" />
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <EditText
+                                android:id="@+id/gearSetStartGpsLatInput"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_border"
+                                android:inputType="textCapCharacters"
+                                android:padding="10dp"
+                                android:hint="Lat"
+                                android:layout_marginBottom="4dp"
+                                android:textColor="@color/deep_purple_500"
+                                android:textSize="24dp" />
+                            <EditText
+                                android:id="@+id/gearSetStartGpsLonInput"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_border"
+                                android:inputType="textCapCharacters"
+                                android:padding="10dp"
+                                android:hint="Lon"
+                                android:textColor="@color/deep_purple_500"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/gearSetStartGpsButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/curve_btn"
+                            android:text="GPS 📡"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/gearSetEndDateLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End Date and Time"
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:drawableRight="@drawable/date_range"
+                        android:id="@+id/gearSetEndDateInput"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="textCapCharacters"
+                        android:padding="10dp"
+                        android:textColor="@color/deep_purple_500"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_4"
+                    >
+
+                    <TextView
+                        android:id="@+id/gearSetEndGpsLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End GPS"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:padding="10dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:addStatesFromChildren="true"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/edittext_border"
+                        android:entries="@array/directions" />
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <EditText
+                                android:id="@+id/gearSetEndGpsLatInput"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_border"
+                                android:inputType="textCapCharacters"
+                                android:padding="10dp"
+                                android:hint="Lat"
+                                android:layout_marginBottom="4dp"
+                                android:textColor="@color/deep_purple_500"
+                                android:textSize="24dp" />
+                            <EditText
+                                android:id="@+id/gearSetEndGpsLonInput"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_border"
+                                android:inputType="textCapCharacters"
+                                android:padding="10dp"
+                                android:hint="Lon"
+                                android:textColor="@color/deep_purple_500"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/gearSetEndGpsButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/curve_btn"
+                            android:text="GPS 📡"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <Button
+
+                android:layout_weight="1"
+                android:id="@+id/gearSetDataSaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curve_btn"
+                android:text="Save"
+                android:textSize="20dp"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

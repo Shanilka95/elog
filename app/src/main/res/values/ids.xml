@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="usage_gearTypeTxtLable" type="id"/>
+    <item name="usage_startDateTxtLable" type="id"/>
+    <item name="usage_startDateTxt" type="id"/>
+    <item name="usage_endDateTxtLable" type="id"/>
+    <item name="usage_endDateTxt" type="id"/>
+    <item name="usage_startGpsTxtLable" type="id"/>
+    <item name="usage_startGpsTxt" type="id"/>
+    <item name="usage_endGpsTxtLable" type="id"/>
+    <item name="usage_endGpsTxt" type="id"/>
+    <item name="usage_numberTxtLable" type="id"/>
+    <item name="usage_numberTxt" type="id"/>
+</resources>

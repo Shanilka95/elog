@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">ELOG R ඉංග්‍රීසි හෝඩියේ මුල් අකුර</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+
+    <string name="word_1">அம்மா</string>
+
+
+    <string-array name="gearTypes">
+        <item value="LONGLINE" >LONGLINE</item>
+        <!--        <item value="GILLENT_N_LOGNLINE">GILLENT AND LOGNLINE</item>-->
+        <item value="GILLNET">GILL NET</item>
+        <item value = "RINGNET">RING NET</item>
+        <!--        <item value = "HANDLINE">HANDLINE</item>-->
+    </string-array>
+
+    <string-array name="hookTypes">
+        <item value="00" >----</item>
+        <item value="HT_J_36" >J 36</item>
+        <item value="HT_J_26">J 26</item>
+        <item value="HT_O_83">O 83</item>
+        <item value = "HT_0_17">0 17</item>
+    </string-array>
+
+    <string-array name="fishDataEntryTypes">
+        <item value="1">kPl;nlLf;fg;gl;l kPd; juT Nru;f;fTk;</item>
+        <item value="2">epuhfupf;fg;gl;l ,we;j kPd; juT Nru;f;fTk;(capuw;w)</item>
+        <item value="3">epuhfupf;fg;gl;l Neub kPd; juT Nru;f;fTk; (Neub)</item>
+    </string-array>
+
+    <string-array name="baitTypes">
+        <item value="00" >----</item>
+        <item value="01" >fztha;</item>
+        <item value="02">gwf;Fk; kPd;</item>
+        <item value="03">ghy; kPd;</item>
+        <item value = "04">kw;w</item>
+    </string-array>
+
+    <string-array name="fishTypes">
+        <item value="01">TUNA</item>
+        <item value="02">BILLFISH</item>
+        <item value="03">SHARKS N RAYS</item>
+        <item value="04">MAMMALS</item>
+        <item value="05">TURTLES</item>
+        <item value="06">SEA BIRDS</item>
+        <item value="07">OTHER</item>
+    </string-array>
+
+    <string-array name="matrialList">
+        <item value="00" >----</item>
+        <item value="01" >ieyhd; ,Ue;J ntl;lg;gl;lJ</item>
+        <item value="02">ieyhd; gy</item>
+        <item value="03">kw;w</item>
+    </string-array>
+
+    <string-array name="horberList">
+        <item>Array Item One</item>
+        <item>Array Item Two</item>
+        <item>Array Item Three</item>
+    </string-array>
+
+
+    <!--    INPUT LABLES-->
+    <string name="gearDataTitle">fpau; juT</string>
+    <string name="netMaterial">fl;lk; nghUl;fs;</string>
+
+
+
+
+
+
+</resources>

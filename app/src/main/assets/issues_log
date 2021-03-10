@@ -1,0 +1,20 @@
+*   android:usesCleartextTraffic="true"
+    Cleartext HTTP traffic not permitted, First try hitting the URL with "https://" instead of "http://"
+
+*   setSupportActionBar toolbar cannot be applied to (android.widget.Toolbar) error
+
+    If you are using androidx, replace
+
+    import android.support.v7.widget.Toolbar;
+    import android.support.v7.app.AppCompatActivity;
+
+    with newer imports
+
+    import androidx.appcompat.widget.Toolbar;
+    import androidx.appcompat.app.AppCompatActivity;
+
+
+*   import android.icu.util.Calendar; -> import java.util.Calendar;
+    API Level issue
+
+

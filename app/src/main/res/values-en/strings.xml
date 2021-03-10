@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">ELOG R</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+
+    <string name="word_1">Tuna</string>
+
+
+    <string-array name="gearTypes">
+        <item value="LONGLINE" >LONGLINE</item>
+        <!--        <item value="GILLENT_N_LOGNLINE">GILLENT AND LOGNLINE</item>-->
+        <item value="GILLNET">GILL NET</item>
+        <item value = "RINGNET">RING NET</item>
+        <!--        <item value = "HANDLINE">HANDLINE</item>-->
+    </string-array>
+
+    <string-array name="hookTypes">
+        <item value="00" >----</item>
+        <item value="HT_J_36" >J 36</item>
+        <item value="HT_J_26">J 26</item>
+        <item value="HT_O_83">O 83</item>
+        <item value = "HT_0_17">0 17</item>
+    </string-array>
+
+
+    <string-array name="fishDataEntryTypes">
+        <item value="1">Enter Retained Fish Data</item>
+        <item value="2">Enter Discarded Dead Fish Data</item>
+        <item value="3">Enter Discarded Live Fish Data</item>
+    </string-array>
+
+    <string-array name="baitTypes">
+        <item value="00" >----</item>
+        <item value="01" >SQUID</item>
+        <item value="02">FLYING FISH</item>
+        <item value="03">MILK FISH</item>
+        <item value = "04">OTHER</item>
+    </string-array>
+
+    <string-array name="fishTypes">
+        <item value="01">TUNA</item>
+        <item value="02">BILLFISH</item>
+        <item value="03">SHARKS N RAYS</item>
+        <item value="04">MAMMALS</item>
+        <item value="05">TURTLES</item>
+        <item value="06">SEA BIRDS</item>
+        <item value="07">OTHER</item>
+    </string-array>
+
+    <string-array name="matrialList">
+        <item value="00" >----</item>
+        <item value="01" >Nylon braided</item>
+        <item value="02">Nylon Multifilament</item>
+        <item value="03">Other</item>
+    </string-array>
+
+    <string-array name="horberList">
+        <item>Array Item One</item>
+        <item>Array Item Two</item>
+        <item>Array Item Three</item>
+    </string-array>
+
+
+    <!--    INPUT LABLES-->
+    <string name="gearDataTitle">Gear Data</string>
+    <string name="netMaterial">Net Materials</string>
+
+
+
+
+
+
+</resources>
